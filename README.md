@@ -10,12 +10,10 @@ Those broken programs need your help! (You'll also save the
 planet from evil aliens and help some friendly elephants stick
 together, which is very sweet of you.)
 
-This project was directly inspired by the brilliant and fun
-[rustlings](https://github.com/rust-lang/rustlings)
-project for the [Rust](https://www.rust-lang.org/) language.
-Indirect inspiration comes from [Ruby Koans](http://rubykoans.com/)
-and the Little LISPer/Little Schemer series of books.
-Ziglings was initiated by [Dave Gauer](https://ratfactor.com/).
+This project was initiated by [Dave Gauer](https://ratfactor.com/) and is directly inspired
+by the brilliant and fun [rustlings](https://github.com/rust-lang/rustlings) project.
+Indirect inspiration comes from [Ruby Koans](http://rubykoans.com/) and the Little LISPer/Little
+Schemer series of books.
 
 ## Intended Audience
 
@@ -47,20 +45,20 @@ Verify the installation and build number of `zig` like so:
 
 ```
 $ zig version
-0.14.0-dev.xxxx+xxxxxxxxx
+0.15.0-dev.xxxx+xxxxxxxxx
 ```
 
 Clone this repository with Git:
 
 ```
-$ git clone https://ziglings.org
-$ cd ziglings.org
+git clone https://codeberg.org/ziglings/exercises.git ziglings
+cd ziglings
 ```
 
 Then run `zig build` and follow the instructions to begin!
 
 ```
-$ zig build
+zig build
 ```
 
 Note: The output of Ziglings is the unaltered output from the Zig
@@ -75,8 +73,8 @@ the appropriate tag.
 The Zig language is under very active development. In order to be
 current, Ziglings tracks **development** builds of the Zig
 compiler rather than versioned **release** builds. The last
-stable release was `0.13.0`, but Ziglings needs a dev build with
-pre-release version "0.14.0" and a build number at least as high
+stable release was `0.14.0`, but Ziglings needs a dev build with
+pre-release version "0.15.0" and a build number at least as high
 as that shown in the example version check above.
 
 It is likely that you'll download a build which is _greater_ than
@@ -173,6 +171,11 @@ zig build -Dn=19 -l
   uninstall        Uninstall 019_functions2.zig from prefix path
   test             Run 019_functions2.zig without checking output
   ...
+```
+
+To reset the progress (have it run all the exercises that have already been completed):
+```
+zig build -Dreset
 ```
 
 ## What's Covered
